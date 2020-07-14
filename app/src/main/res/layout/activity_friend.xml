@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1"
+    tools:context=".friend">
+
+    <ImageView
+        android:id="@+id/power"
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_channel_reset_foreground_power"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="76dp"
+        android:layout_height="53dp"
+        android:id="@+id/reset"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/ic_channel_reset_power_foreground_reset_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/p1"
+        android:layout_width="174dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="96dp"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/friendId"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/p1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_00"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="44dp"
+        android:background="#2196f3"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p1" />
+
+    <Button
+        android:id="@+id/button_01"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="44dp"
+        android:background="#8bc34a"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintStart_toEndOf="@+id/button_00"
+        app:layout_constraintTop_toBottomOf="@+id/p1" />
+
+    <Button
+        android:id="@+id/button_02"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="52dp"
+        android:background="#ff9800"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toEndOf="@+id/button_01"
+        app:layout_constraintTop_toBottomOf="@+id/friendId" />
+
+    <Button
+        android:id="@+id/button_10"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="4dp"
+        android:background="#795548"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_00" />
+
+    <Button
+        android:id="@+id/button_11"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#f50057"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintStart_toEndOf="@+id/button_10"
+        app:layout_constraintTop_toBottomOf="@+id/button_01" />
+
+    <Button
+        android:id="@+id/button_12"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#ffeb3b"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintStart_toEndOf="@+id/button_11"
+        app:layout_constraintTop_toBottomOf="@+id/button_02" />
+
+    <Button
+        android:id="@+id/button_20"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="4dp"
+        android:background="#00e676"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_10" />
+
+    <Button
+        android:id="@+id/button_21"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#00e5ff"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintStart_toEndOf="@+id/button_20"
+        app:layout_constraintTop_toBottomOf="@+id/button_11" />
+
+    <Button
+        android:id="@+id/button_22"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#76ff03"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintStart_toEndOf="@+id/button_21"
+        app:layout_constraintTop_toBottomOf="@+id/button_12" />
+
+    <TextView
+        android:layout_width="114dp"
+        android:layout_height="37dp"
+        android:id="@+id/gobackId"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Go Back"
+        android:textAlignment="center"
+        android:textColor="#d50000"
+        android:textSize="22sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_20" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
